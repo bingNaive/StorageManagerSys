@@ -14,6 +14,7 @@ namespace ConsoleApplication1
             StorageDbContext dbContext = new StorageDbContext();
             dbContext.Database.CreateIfNotExists();
             Console.WriteLine("ok");
+            Console.ReadKey();
         }
     }
 }

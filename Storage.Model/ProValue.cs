@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Storage.Model
 {
@@ -7,6 +8,8 @@ namespace Storage.Model
     /// </summary>
     public class ProValue:BaseModel
     {
+        [StringLength(100)]
+        [Required]
         public string Value { get; set; }
         //属性Id
         [ForeignKey("Property")]

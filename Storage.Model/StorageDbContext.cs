@@ -5,7 +5,7 @@ namespace Storage.Model
     public class StorageDbContext:DbContext
     {
         public StorageDbContext()
-            : base("name=CodeFirst")
+            : base("name=conStr")
         {
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<StorageDbContext>());    
         }

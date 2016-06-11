@@ -9,8 +9,12 @@ namespace Storage.Model
         [Key]
         public Guid Id { get; set; }
         //商品名称
+        [StringLength(50)]
+        [Required]
         public string Title { get; set; }
         //商品描述
+        [StringLength(200)]
+        [Required]
         public string Description{ get; set; }
         public decimal Price { get; set; }
         public int Count { get; set; }

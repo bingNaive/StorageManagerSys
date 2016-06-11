@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Storage.Model
 {
@@ -8,6 +9,8 @@ namespace Storage.Model
     /// </summary>
     public class Property:BaseModel
     {
+        [StringLength(30)]
+        [Required]
         public string Name { get; set; }
 
         //此属性对应的所有可选值

@@ -7,7 +7,10 @@ namespace Storage.Model
     public class Role:BaseModel
     {
         //角色名称
+        [StringLength(30)]
+        [Required]
         public string RoleName { get; set; }
+
         //这个角色拥有的用户
         public virtual ICollection<User> Users{ get; set; }
     }
