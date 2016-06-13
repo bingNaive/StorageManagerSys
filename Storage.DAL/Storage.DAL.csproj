@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="ActionDal.cs" />
     <Compile Include="BaseDal.cs" />
+    <Compile Include="ExportProductDal.cs" />
+    <Compile Include="IncludeProductDal.cs" />
     <Compile Include="RoleDal.cs" />
     <Compile Include="UserDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
